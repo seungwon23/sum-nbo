@@ -13,7 +13,7 @@ uint32_t nbo(const char *filename){
 		exit(0);
 	}
 
-	uint32_t num, sum;
+	uint32_t num;
 	size_t read_size = fread(&num, sizeof(uint32_t), 1, file);
 	if(read_size != 1) {
 		fprintf(stderr, "Failed to read 4 bytes from %s.\n", filename);
